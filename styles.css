@@ -1,0 +1,1252 @@
+/*Formateo general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Importar local font texts*/
+@font-face {
+    font-family: 'VALORANT';
+    src:url(/fonts/valorant/Valorant\ Font.ttf)
+}
+
+@font-face {
+    font-family: 'Gameplay';
+    src:url(/fonts/Gameplay/Gameplay.ttf)
+}
+
+@font-face {
+    font-family: 'Earth Orbiter Super';
+    src:url(/fonts/earth_orbiter/earthorbitersuperital.ttf)
+}
+
+@font-face {
+    font-family: 'Hack Nerd Font Mono';
+    src:url(/fonts/Hack_Nerd_Font_Mono/HACKNERDFONTMONO-REGULAR.TTF)
+}
+
+
+/*Primera Seccion de la pagina de inicio - contenedor*/
+#container_one {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Barra de navegacion - Contenedor*/
+#nav_menu {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: #17161F;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Logo de la barra de navegacion - FollowGram*/
+#logo {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+    font-family: VALORANT;
+}
+
+/*Menu de navegacion superios - Items*/
+#nav_menu #main_nav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    
+}
+
+#nav_menu #main-nav ol {
+    list-style: none;
+}
+
+#nav_menu #main_nav ol li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#nav_menu #main_nav ol li a {
+    font-family: VALORANT;
+    text-decoration: none;
+    font-size: 70%;
+    color: #8B8B8B;
+}
+
+#nav_menu #main_nav ol li a:hover {
+    color: #ffffff;
+}
+
+#button_contact_container {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_contact_container #button_contact {
+    background-color:#211E2E;
+    border-radius: 6px;
+    display: flex;
+    width: 40%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#button_contact_container #button_contact span {
+    font-family: VALORANT;
+    font-size: 70%;
+    color: #BBB9C2;
+}
+
+#button_contact_container #button_contact:hover {
+    background-color: #BBB9C2; /* Cambia el background-color del botón a gris al posicionar el cursor sobre el botón */
+}
+
+#button_contact_container #button_contact:hover span {
+    color: #ffffff; /* Cambia el color del texto del spam a negro al posicionar el cursor sobre el botón */
+}
+
+/*Floating menu - (Responsive)*/
+
+.floating_menu {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.floating_menu:hover {
+    background: #211E2E;
+}
+
+.floating_menu div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #ffffff;
+}
+
+/*Menu de navegacion plegable lateral (Responsive)*/
+#lateral_nav {
+    display:    none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    transition: 0.2s;
+    background-color: #17161F;
+}
+
+#logo_lateral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+#logo_lateral a {
+    text-decoration: none;
+    color: white;
+    font-family: VALORANT;
+}
+
+#lateral_nav #container-menu-lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 92vh;
+}
+
+#lateral_nav #container-menu-lateral{
+    font-family: VALORANT;
+    text-decoration: none;
+    font-size: 70%;
+    color: #8B8B8B;
+}
+
+#container-menu-lateral .button_menu_lateral {
+    display: flex;
+    width: 80%;
+    height: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #211E2E;
+    margin-top: 10%;
+}
+
+#container-menu-lateral .button_menu_lateral_contact {
+    display: flex;
+    width: 80%;
+    height: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #BBB9C2;
+    margin-top: 10%;
+    color: #000000;
+    font-weight: 600;
+}
+
+#container-menu-lateral .button_menu_lateral:hover {
+    background-color: #BBB9C2;
+}
+
+#container-menu-lateral .button_menu_lateral:hover span {
+    color: #ffffff;
+}
+
+#container-menu-lateral .button_menu_lateral_contact:hover {
+    background-color: #000000;
+}
+
+#container-menu-lateral .button_menu_lateral_contact:hover span {
+    color: white;
+    font-weight: 100;
+}
+
+/*Primera seccion de la pagina de inicio - subcontenedor*/
+#section_home {
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient(to bottom, #481118, #17161F);
+}
+
+#section_home #informacion_seccion_home {
+    position: relative;
+    top: 30%;
+    left: 6%;
+    width: 39%;
+    height: 50vh;
+}
+
+#section_home #informacion_seccion_home #container_title_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+#section_home #informacion_seccion_home #container_title_one span {
+    color: white;
+    font-family: Gameplay;
+    font-size: 30px;
+
+}
+
+#section_home #informacion_seccion_home #container_subtitle_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+#section_home #informacion_seccion_home #container_subtitle_one span {
+    color: white;
+    font-family: 'Earth Orbiter Super';
+}
+#section_home #informacion_seccion_home #container_buttons_setion_main {
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacion_seccion_home .button_main_section {
+    display: inline-flex;
+    width: 45%;
+    height: 30%;
+    margin: 2%;
+    border-radius: 5px;
+    background-color: #17161F;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(119, 2, 2, 0.2);
+}
+
+#informacion_seccion_home .button_main_section:hover {
+    background-color: #BBB9C2;
+    box-shadow: 5px 5px 10px rgba(138, 136, 136, 0.2);
+}
+
+#informacion_seccion_home .button_main_section span {
+    color: red;
+    font-family: VALORANT;
+    font-size: 70%;
+}
+
+#informacion_seccion_home .button_main_section:hover span {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#icon_laptop {
+    position: absolute;
+    left: 0;
+    top: 24%;
+    left: 42%;
+    width: 55%;
+}
+
+/*Segunda seccion de la pagina de inicio - Contenedor principal*/
+#container_two {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #17161F;
+}
+
+#container_interactivo {
+    display: flex;
+    width: 85%;
+    height: 75%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #4A1118, #17161F);
+}
+
+#text_one {
+    color: white;
+    font-family: 'Hack Nerd Font Mono';
+    margin-left: 18%;
+    margin-top: 4%;
+}
+
+#icon_followgram {
+    position: absolute;
+    top: 122%;
+    left: 23%;
+    width: 60%;
+}
+
+#gif_followed {
+    position: absolute;
+    width: 15%;
+    top: 145%;
+    left: 43%;
+}
+
+.titular_interactivo {
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    height: 15%;
+    top: 174%;
+    left: 35%;
+    font-size: 160%;
+    text-align: center;
+    color: white;
+    font-family: 'Gameplay';
+    text-align: center;
+}
+
+#container_interactivo_two {
+    position: absolute;
+    top: 188%;
+    width: 30%;
+    height: 10%;
+}
+
+#container_interactivo_two {
+    font-family: 'Earth Orbiter Super';
+    color: white;
+    text-align: center;
+}
+
+/*Tercera seccion de la pagina de inicio - Contenedor principal*/
+#container_three {
+    display: block;
+    background-color: #17161F;
+    border: 0.1px solid #17161F;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+#container_button_info_line_one {
+    display: flex;
+    width: 100%;
+    height: 9%;
+    margin-top: 3.5%;
+    justify-content: center;
+}
+
+#container_button_info_line_two {
+    display: flex;
+    width: 100%;
+    height: 9%;
+    margin-top: 1.5%;
+    justify-content: center;
+}
+
+.button_info {
+    border: 0.1px solid #4B4A51;
+    border-radius: 10px;
+    background-color: #16141F;
+    display: flex;
+    margin-left: 30px;
+    width: 20%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.marco_small {
+    border: 0.1px solid #4B4A51;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 7px;
+    margin-left: 7px;
+    width: 15%;
+    height: 73%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini_icon {
+    width: 60%;
+    height: 60%;
+    color: white;
+}
+
+.container_text_button_info {
+    display: flex;
+    width: 82%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_text_button_info span {
+    font-family: VALORANT;
+    font-size: 80%;
+    color: #8B8B8B;
+}
+
+.button_info:hover {
+    border: 0.1px solid #ffffff;
+    border-radius: 0px;
+}
+
+.button_info:hover .marco_small {
+    border: 0.1px solid #ffffff;
+    border-radius: 0px;
+}
+
+.button_info .container_text_button_info:hover span {
+    color: white;
+}
+
+#container_button_info_responsive {
+    display: none;
+}
+#container_banner_three {
+    border-radius: 15px;
+    position: relative;
+    top: 5%;
+    left: 34.5%;
+    width: 60%;
+    height: 60%;
+}
+
+#container_banner_three .img_container_banner_three {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#container-button-section-three {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top: 73%;
+    left: 52%;
+    width: 47%;
+    height: 25%;
+    background-color: #17161F;
+}
+
+#container-button-section-three .button_whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px solid #8B8B8B;
+    border-radius: 7px;
+    margin: 3%;
+    width: 40%;
+    height: 55%;
+}
+
+#container-button-section-three .button_whatsapp span {
+    font-family: VALORANT;
+    font-size: 70%;
+    color: #8B8B8B;
+}
+
+#container-button-section-three .button_whatsapp:hover {
+    background-color: #BBB9C2;
+}
+
+#container-button-section-three .button_whatsapp:hover span {
+    color: #000000;
+    font-weight: 600;
+}
+
+#container_three #containe_title_three {
+    position: absolute;
+    top: 236%;
+    left: 4.5%;
+    width: 30%;
+    height: 59%;
+}
+
+#title_ctt_1 {
+    width: 80%;
+    height: 24%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+#title_ctt_1 span{
+    color: white;
+    font-family: Gameplay;
+    font-size: 20px;
+}
+
+#title_ctt_2 {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+}
+
+#title_ctt_2 span {
+    color: white;
+    font-family: 'Earth Orbiter Super';
+    font-size: 13px;
+}
+
+/*Pie de pagina - universal*/
+#container_footer {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to bottom, #17161F, #910923);
+}
+
+#container_footer #subcontainer_footer_one {
+    width: 87%;
+    height: 29%;
+    display: inline-flex;
+    margin-left: 7%;
+}
+
+#logo_footer_container {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+}
+
+#logo_footer_container a {
+    text-decoration: none;
+    color: white;
+    font-family: Gameplay;
+    font-size: 20px;
+}
+
+#nav_menu_footer_container {
+    width: 50%;
+    height: 100%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#nav_menu_footer_container nav ol {
+    list-style: none;
+}
+
+#nav_menu_footer_container nav ol li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#nav_menu_footer_container nav ol li a {
+    font-family: VALORANT;
+    text-decoration: none;
+    font-size: 60%;
+    color: #8B8B8B;
+}
+
+#nav_menu_footer_container nav ol li a:hover {
+    color: white;
+}
+
+#container_footer #subcontainer_footer_two {
+    display: inline-flex;
+    width: 87%;
+    height: 40%;
+    margin-left: 7%;
+    align-items: center;
+}
+
+#subcontainer_footer_two .cubo_button {
+    display: flex;
+    width: 5%;
+    height: 75%;
+    background-color: #16141F;
+    border: 0.1px solid #8B8B8B;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5%;
+    transition: 0.2s;
+}
+
+#subcontainer_footer_two .cubo_button:hover {
+    border: 0.1px solid white;
+    border-radius: 0;
+}
+
+#subcontainer_footer_two .cubo_button img {
+    width: 50%;
+    height: 50%;
+}
+
+#line_footer {
+    position: relative;
+    border: 0.1px outset #8b8b8b ;
+    margin-left: 7%;
+    width: 87%;
+}
+
+#container_footer #subcontainer_footer_three {
+    display: inline-flex;
+    width: 87%;
+    height: 29%;
+    margin-left: 7%;
+}
+
+#container_footer #subcontainer_footer_three #coping {
+    display: flex;
+    height: 90%;
+    width: 30%;
+    align-items: center;
+}
+
+#container_footer #subcontainer_footer_three #coping span {
+    font-family: VALORANT;
+    font-size: 70%;
+    color: #8B8B8B;
+}
+
+#container_info {
+    display: flex;
+    width: 50%;
+    height: 90%;
+    margin-left: 20%;
+    justify-content: end;
+    align-items: center;
+}
+
+#container_info nav ol {
+    list-style: none;
+}
+
+#container_info nav ol li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#container_info nav ol li a {
+    font-family: VALORANT;
+    text-decoration: none;
+    font-size: 60%;
+    color: #8B8B8B;
+}
+
+#container_info nav ol li a:hover {
+    color: white;
+}
+
+/*Boton flotante de whatsapp - redirecionar a cuenta de whatsapp*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*Modo Responsive para dispositivos con resolucion de pantalla menor a 1000px*/
+@media only screen and (max-width: 1000px){
+
+    #lateral_nav {
+        display: block;
+        left: -35%;
+        z-index: 999;
+        top: 0;
+        width: 35%;
+        height: 100vh;
+        transition: 0.2s;
+        background-color: #17161F;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0);
+    }
+
+    #container-menu-lateral .button_menu_lateral {
+        width: 80%;
+        height: 6%;
+    }
+
+    #container-menu-lateral .button_menu_lateral_contact {
+        width: 80%;
+        height: 6%;
+    }
+
+    #logo {
+        width: 30%;
+        height: 100%;
+        margin-left: 8%;
+    }
+
+    #nav_menu #main_nav a {
+        display: none;
+    }
+
+    #button_contact_container #button_contact {
+        width: 85%;
+        height: 55%;
+    }
+
+    #button_contact_container #button_contact span {
+        font-size: 10px;
+    }
+
+    .floating_menu {
+        display: block;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+    }
+
+    /* Mostrar y ocultar menú lateral al hacer clic en el botón flotante */
+    #nav_check:checked ~ #lateral_nav {
+        left: 0px;
+    }
+
+    /* Ocultar menú lateral al hacer clic en el botón flotante nuevamente */
+    .floating_menu:checked ~ #lateral_nav {
+        display: none;
+    }
+
+    /*Primera seccion de la pagina de inicio - subcontenedor*/
+    #section_home #informacion_seccion_home {
+        top: 15%;
+        height: 65%;
+    }
+
+    #section_home #informacion_seccion_home #container_title_one span {
+        font-size: 100%;
+    }
+
+    #section_home #informacion_seccion_home #container_subtitle_one {
+        height: 20%;
+    }
+
+    #section_home #informacion_seccion_home #container_subtitle_one span {
+        font-size: 11px;
+    }
+
+    #informacion_seccion_home .button_main_section {
+        height: 20%;
+    }
+
+    #informacion_seccion_home .button_main_section span {
+        font-size: 60%;
+    }
+
+    #icon_laptop {
+        top: 29%;
+    }
+
+    /*Segunda seccion de la pagina de inicio - Contenedor principal*/
+    #text_one {
+        margin-left: 17%;
+        margin-top: 7%;
+        font-size: 11px;
+    }
+
+    #icon_followgram {
+        top: 126%;
+        left: 23%;
+        width: 60%;
+    }
+
+    #gif_followed {
+        width: 20%;
+        top: 145%;
+        left: 40%;
+    }
+
+    .titular_interactivo {
+        font-size: 100%;
+    }
+
+    #container_interactivo_two {
+        font-size: 11px;
+    }
+
+    /*Tercera seccion de la pagina de inicio - Contenedor principal*/
+    #container_button_info_line_one {
+        height: 6%;
+    }
+
+    #container_button_info_line_two {
+        height: 6%;
+    }
+
+    .button_info {
+        border-radius: 6px;
+        margin-left: 3%;
+    }
+
+    .marco_small {
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 22%;
+        height: 73%;
+    }
+
+    .mini_icon {
+        width: 50%;
+        height: 50%;
+    }
+
+    .container_text_button_info {
+        text-align: center;
+    }
+
+    .container_text_button_info span {
+        font-size: 50%;
+    }
+
+    #container_button_info_responsive {
+        display: none;
+    }
+
+    #container_banner_three {
+        border-radius: 15px;
+        top: 10%;
+        width: 60%;
+        height: 40%;
+    }
+
+    #container_banner_three .img_container_banner_three {
+        border-radius: 10px;
+    }
+
+    #container-button-section-three {
+        border-radius: 7px;
+        top: 76%;
+        height: 22%;
+    }
+
+    #container-button-section-three .button_whatsapp {
+        border-radius: 4px;
+        height: 52%;
+    }
+
+    #container-button-section-three .button_whatsapp span {
+        font-size: 55%;
+    }
+
+    #container_three #containe_title_three {
+        top: 227%;
+        left: 4.5%;
+        height: 59%;
+    }
+
+    #title_ctt_1 {
+        width: 90%;
+        height: 20%;
+        margin-left: 5%;
+    }
+
+    #title_ctt_1 span{
+        font-size: 90%;
+    }
+
+    #title_ctt_2 {
+        width: 90%;
+        height: 80%;
+        margin-left: 5%;
+    }
+
+    #title_ctt_2 span {
+        font-size: 11px;
+    }
+
+    /*Pie de pagina - universal*/
+
+    #logo_footer_container a {
+        font-size: 90%;
+    }
+
+    #nav_menu_footer_container nav ol li a {
+        font-size: 50%;
+    }
+
+    #subcontainer_footer_two .cubo_button {
+        width: 7%;
+        height: 55%;
+        border-radius: 4px;
+        margin-right: 0.7%;
+    }
+
+    #subcontainer_footer_two .cubo_button img {
+        width: 45%;
+        height: 45%;
+    }
+
+    #container_footer #subcontainer_footer_three #coping {
+        width: 50%;
+    }
+
+    #container_footer #subcontainer_footer_three #coping span {
+        font-size: 50%;
+    }
+
+    #container_info {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    #container_info nav ol li a {
+        font-size: 50%;
+    }
+}
+
+/*Modo Responsive para dispositivos con resolucion de pantalla menor a 500px*/
+@media only screen and (max-width: 500px) {
+
+    #lateral_nav {
+        display: block;
+        left: -45%;
+        width: 45%;
+    }
+
+    #container-menu-lateral .button_menu_lateral {
+        height: 5%;
+    }
+
+    #container-menu-lateral .button_menu_lateral_contact {
+        height: 5%;
+    }
+
+    #nav_menu #main_nav a {
+        display: none;
+    }
+
+    #button_contact_container #button_contact {
+        width: 100%;
+        height: 50%;
+    }
+
+    #button_contact_container #button_contact span {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /*Primera seccion de la pagina de inicio - subcontenedor*/
+    #section_home #informacion_seccion_home {
+        top: 10%;
+        width: 85%;
+        height: 65%;
+        left: 7.5%;
+    }
+
+    #section_home #informacion_seccion_home #container_title_one span {
+        font-size: 129%;
+    }
+
+    #section_home #informacion_seccion_home #container_subtitle_one {
+        height: 20%;
+    }
+
+    #section_home #informacion_seccion_home #container_subtitle_one span {
+        font-size: 13px;
+    }
+
+    #informacion_seccion_home .button_main_section {
+        height: 20%;
+    }
+
+    #informacion_seccion_home .button_main_section span {
+        font-size: 60%;
+    }
+
+    #icon_laptop {
+        top: 75%;
+        left: 22%;
+    }
+
+    /*Segunda seccion de la pagina de inicio - Contenedor principal*/
+    #text_one {
+        margin-left: 15%;
+        margin-top: 10%;
+        font-size: 11px;
+    }
+
+    #icon_followgram {
+        top: 130%;
+        left: 21%;
+        width: 60%;
+    }
+
+    #gif_followed {
+        width: 30%;
+        top: 145%;
+        left: 35%;
+    }
+
+    .titular_interactivo {
+        width: 60%;
+        height: 8%;
+        top: 170%;
+        left: 20%;
+        font-size: 90%;
+    }
+
+    #container_interactivo_two {
+        font-size: 10px;
+        top: 188%;
+        left: 20%;
+        width: 60%;
+        height: 10%;
+    }
+
+    /*Tercera seccion de la pagina de inicio - Contenedor principal*/
+    #container_button_info_line_one {
+        display: none;
+    }
+
+    #container_button_info_line_two {
+        display: none;
+    }
+
+    #container_banner_three {
+        display: flex;
+    }
+
+    #container_three #containe_title_three {
+        display: none;
+    }
+
+    #container_button_info_responsive {
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+
+    #title_ctt_1 { 
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #title_ctt_1 span {
+        font-size: 90%;
+    }
+
+    .sub-cbir {
+        margin-top: 3%;
+        width: 100%;
+        height: 13%;
+        display: flex;
+    }
+
+    .button_info {
+        border: 0.1px solid #4B4A51;
+        border-radius: 6px;
+        background-color: #16141F;
+        display: flex;
+        margin-left: 7%;
+        width: 40%;
+        height: 100%;
+        transition: 0.2s;
+    }
+    
+    .marco_small {
+        border: 0.1px solid #4B4A51;
+        border-radius: 4px;
+        display: flex;
+        margin-top: 5.5px;
+        margin-left: 5.5px;
+        width: 20%;
+        height: 73%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mini_icon {
+        width: 40%;
+        height: 40%;
+        color: white;
+    }
+    
+    .container_text_button_info {
+        display: flex;
+        width: 82%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container_text_button_info span {
+        font-family: VALORANT;
+        font-size: 50%;
+        color: #8B8B8B;
+    }
+
+    #container_banner_three {
+        border-radius: 15px;
+        position: relative;
+        top: 2%;
+        left: 7.7%;
+        width: 84%;
+        height: 40%;
+    }
+    
+    #container_banner_three .img_container_banner_three {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #container-button-section-three {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        top: 75.5%;
+        left: 50%;
+        width: 48%;
+        height: 22%;
+        background-color: #17161F;
+    }
+    
+    #container-button-section-three .button_whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.1px solid #8B8B8B;
+        border-radius: 4px;
+        margin: 3%;
+        width: 40%;
+        height: 50%;
+    }
+    
+    #container-button-section-three .button_whatsapp span {
+        font-family: VALORANT;
+        font-size: 45%;
+        color: #8B8B8B;
+    }
+    
+    #container-button-section-three .button_whatsapp:hover {
+        background-color: #BBB9C2;
+    }
+    
+    #container-button-section-three .button_whatsapp:hover span {
+        color: #000000;
+        font-weight: 600;
+    }
+    
+    #container_three #containe_title_three {
+        position: absolute;
+        top: 236%;
+        left: 4.5%;
+        width: 30%;
+        height: 59%;
+    }
+
+    /*Pie de pagina - universal*/
+
+    #logo_footer_container a {
+        font-size: 90%;
+    }
+
+    #nav_menu_footer_container nav ol li a {
+        font-size: 50%;
+    }
+
+    #subcontainer_footer_two .cubo_button {
+        width: 14%;
+        height: 55%;
+        border-radius: 4px;
+        margin-right: 0.7%;
+    }
+
+    #subcontainer_footer_two .cubo_button img {
+        width: 45%;
+        height: 45%;
+    }
+
+    #container_footer #subcontainer_footer_three #coping {
+        width: 50%;
+    }
+
+    #container_footer #subcontainer_footer_three #coping span {
+        font-size: 50%;
+    }
+
+    #container_info {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    #container_info nav ol li a {
+        font-size: 50%;
+    }
+    
+}

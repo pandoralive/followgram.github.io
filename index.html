@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="followgram"">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <meta name="description" content="Bot de Instagram y automatización para tu crecimiento en la plataforma, aumentar seguidores y mejorar interacciones. Descubre nuestra solución efectiva.">
+        <meta name="keywords" content="Bot Instagram, Instagram automatización, Instagram seguidores, bot Instragram interacciones, Instagram crecimiento, instagram follow, script instragram, bot seguidores, ganar seguidores instagram">
+        <link rel="icon" href="/right-chevron.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="main.js"></script>
+        <title>FollowGram - Inicio</title>
+    </head>
+    <body>
+        <!--Primera seccion de la pagina home - barra de navegacion, seccion de home.-->
+        <div id="container_one">
+
+            <!--Contenedor de la barra de navegacion.-->
+            <div id="nav_menu">
+
+                <!--Contenedor del logo de la barra de navegacion.-->
+                <div id="logo">
+                    <a href="/index.html"<h1>FollowGram</h1></a>
+                </div>
+
+                <!--Contenedor del menu de navegacion - header.-->
+                <nav id="main_nav">
+                    <ol>
+                        <li><a href="/index.html">inicio</a></li>
+                        <li><a href="#">informacion</a></li>
+                        <li><a href="#">galeria</a></li>
+                        <li><a href="#">Descargar</a></li>
+                    </ol>
+                </nav>
+
+                <!--Contenedor del botton de Contact de la barra de menu.-->
+                <div id="button_contact_container">
+                    <div id="button_contact" class="boton" onclick="redireccionar_contact()">
+                        <span>contacto</span>
+                    </div>
+                </div>
+
+                <!--Menu de hamburguesa - barra de navegacion superior (Responsive)-->
+                <label for="nav_check" class="floating_menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+
+                <!--Contenedor del menu de navegacion lateral (Responsive) - Lateral-->
+                <input type="checkbox" id="nav_check" hidden>
+
+                <nav id="lateral_nav">
+
+                    <!--Contenedor del logo de la barra de navegacion.-->
+                    <div id="logo_lateral">
+                        <a href="/index.html"<h1>FollowGram</h1></a>
+                    </div>
+
+                    <!--Contenedor de items (Responsive) - Menu lateral-->
+                    <div id="container-menu-lateral">
+                        <div class="button_menu_lateral" onclick="redireccionar_home()"><span>inicio</span></div>
+                        <div class="button_menu_lateral" onclick="redireccionar_about()"><span>informacion</span></div>
+                        <div class="button_menu_lateral" onclick="redireccionar_gallery()"><span>gallery</span></div>
+                        <div class="button_menu_lateral" onclick="redireccionar_download()"><span>Descargar</span></div>
+                        <div class="button_menu_lateral_contact" onclick="redireccionar_contact()"><span>contact</span></div>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!--Contenedor de la seccion home.-->
+            <div id="section_home">
+
+                <!--Contenedor de la informacion de seccion home.-->
+                <div id="informacion_seccion_home">
+
+                    <!--Contenedor del titulo uno - seccion home-->
+                    <div id="container_title_one">
+                        <span>Descarga FollowGram y aumenta tus seguidores en Instagram </span>
+                    </div>
+
+                    <!--contenedor del subtitulo uno - seccion home-->
+                    <div id="container_subtitle_one">
+                        <span>Un script versátil, fácil de usar y una herramienta muy eficaz para conseguir leads reales.</span>
+                    </div>
+
+                    <!--Contenedor de los botones contrales - seccion home-->
+                    <div id="container_buttons_setion_main">
+                        <div class="button_main_section" onclick="redireccionar_download()"><span>Descargar</span></div>
+                        <div class="button_main_section" onclick="redireccionar_contact()"><span>contacto</span></div>
+                    </div>
+
+                </div>
+
+                <!--Contenedor de banner laptop-->
+                <img id="icon_laptop" src="/icon_laptop.png">
+
+            </div>
+        </div>
+
+        <!--Segunda seccion de la pagina home - seccion interactiva - banner followgram, titulos y subtitulos-->
+        <div id="container_two">
+
+            <!--Contenedor interactivo de banner Follogram, Gif Follow-->
+            <div id="container_interactivo">
+                <span id="text_one">ubuntu@ubuntu:~$</span>
+                <img id="icon_followgram" src="/icon_followgram.png">
+                <img id="gif_followed" src="/followed.gif" alt="Descripción del GIF en caso de no cargar o ser invisible">
+
+                <!--Titulo principal contenedor interactivo-->
+                <div class="titular_interactivo">
+                    <span>Bot de seguimiento automatizado.</span>
+                </div>
+
+            </div>
+
+            <!--Contenedor interactivo dos - subtitulo-->
+            <div id="container_interactivo_two">
+                <span>Basado en la estrategia de marketing "Follow for Follow"</span>
+            </div>
+
+        </div>
+
+        <!--Tercera seccion de la pagina home - Seccion informativa-->
+        <div id="container_three">
+
+            <!--Contenedor de la primera fila de botones - botones informativos-->
+            <div id="container_button_info_line_one">
+
+                <!--Boton informativo uno - facil de usar -->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/paper-plane.png" alt="FollowGram es un bot de Instagram fácil de usar"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>facil de usar</span>
+                    </div>
+                </div>
+
+                <!--Boton informativo dos - Trabajo de fondo-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/console.png" alt="FollowGram es un bot de Instagram que puedes usar en segundo plano"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>Trabajo en segundo plano</span>
+                    </div>
+                </div>
+
+                <!--Boton informativo tres - Multiples idiomas-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/google-translate.png" alt="FollowGram es un bot de Instagram en múltiples idiomas"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>multiples idiomas</span>
+                    </div>
+                </div>
+
+                <!--Boton informativo cuatro - Multi platforma-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/laptop-settings.png" alt="FollowGram es un bot de Instagram multiplataforma"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>Multiplataforma</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Contenedor de la segunda fila de botones - botones informativos-->
+            <div id="container_button_info_line_two">
+
+                <!--Boton informativo cinco - Libre de malware-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/hatch/64/FFFFFF/spiderman-new.png" alt="FollowGram es un bot de Instagram libre de malware"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>Libre de malware</span>
+                    </div>
+                </div>
+
+                <!--Boton informativo seis - Atencion al cliente-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-support-shipping-and-delivery-tanah-basah-basic-outline-tanah-basah.png" alt="FollowGram es un bot de Instagram con atención al cliente 24/7"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>Atencion al cliente 24/7</span>
+                    </div>
+                </div>
+
+                <!--Boton informativo siete - bot multifuncional-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/windows/32/FFFFFF/message-bot.png" alt="FollowGram es un bot de Instagram multifuncional"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>Bot multifuncional</span>
+                    </div>
+                </div>
+
+                <!--Boton informativo ocho - Soporte de actualizacion-->
+                <div class="button_info" onclick="redireccionar_about()">
+                    <div class="marco_small">
+                        <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/login-rounded-up.png" alt="FollowGram es un bot de Instagram con soporte de actualizaciones"/>
+                    </div>
+                    <div class="container_text_button_info">
+                        <span>Soporte de actualizacion</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Contenedor de la primera fila de botones - botones informativos-->
+            <div id="container_button_info_responsive">
+
+                <div id="title_ctt_1">
+                    <span>¡Estas son las ventajas de usar FollowGram!</span>
+                </div>
+
+                <div class="sub-cbir">
+                    <!--Boton informativo uno - facil de usar-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/paper-plane.png" alt="FollowGram es un bot de Instagram fácil de usar"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>facil de usar</span>
+                        </div>
+                    </div>
+
+                    <!--Boton informativo dos - Trabajo de fondo-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/console.png" alt="FollowGram es un bot de Instagram que puedes usar en segundo plano"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>Trabajo en segundo plano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-cbir">
+
+                    <!--Boton informativo tres - Multiples idiomas-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/google-translate.png" alt="FollowGram es un bot de Instagram en múltiples idiomas"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>multiples idiomas</span>
+                        </div>
+                    </div>
+
+                    <!--Boton informativo cuatro - Multi platforma-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/laptop-settings.png" alt="FollowGram es un bot de Instagram multiplataforma"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>Multiplataforma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-cbir">
+
+                    <!--Boton informativo cinco - Libre de malware-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/hatch/64/FFFFFF/spiderman-new.png" alt="FollowGram es un bot de Instagram libre de malware"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>Libre de malware</span>
+                        </div>
+                    </div>
+
+                    <!--Boton informativo seis - Atencion al cliente-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-support-shipping-and-delivery-tanah-basah-basic-outline-tanah-basah.png" alt="FollowGram es un bot de Instagram con atención al cliente 24/7"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>Atencion al cliente 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-cbir">
+
+                    <!--Boton informativo siete - bot multifuncional-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/windows/32/FFFFFF/message-bot.png" alt="FollowGram es un bot de Instagram multifuncional"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>Bot multifuncional</span>
+                        </div>
+                    </div>
+
+                    <!--Boton informativo ocho - Soporte de actualizacion-->
+                    <div class="button_info" onclick="redireccionar_about()">
+                        <div class="marco_small">
+                            <img class="mini_icon" src="https://img.icons8.com/ios-filled/50/FFFFFF/login-rounded-up.png" alt="FollowGram es un bot de Instagram con soporte de actualizaciones"/>
+                        </div>
+                        <div class="container_text_button_info">
+                            <span>Soporte de actualizacion</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Container del banner principal y botones de chat - tercera seccion de home - Prueba el bot gratis-->
+            <div id="container_banner_three">
+
+                <!--Banner principal - Prueba el bot gratis-->
+                <img class="img_container_banner_three" src="/img-banner-three.png">
+
+                <!--Contenedor de los botones - chat (Whatsapp - Telegram)-->
+                <div id="container-button-section-three">
+
+                    <!--Botones chat (Whatsapp - Telegram)-->
+                    <div class="button_whatsapp" onclick="redireccionar_whatsapp()" alt="Ir al chat de Whatsapp"><span>Whatsapp</span></div>
+                    <div class="button_whatsapp" onclick="redireccionar_telegram()" alt="Ir al chat de Telegram"><span>Telegram</span></div>
+                </div>
+
+            </div>
+
+            <!--Contenedor de textos informativos laterales - seccion tres de home-->
+            <div id="containe_title_three">
+
+                <!--Titulo informativo - latera-->
+                <div id="title_ctt_1">
+                    <span>¡Estas son las ventajas de usar FollowGram!</span>
+                </div>
+
+                <!--Subtitulo informativo - latera-->
+                <div id="title_ctt_2">
+                    <span>Experimenta la simplicidad y eficiencia de Followgram, un bot automático para crecer en Instagram. Con su fácil manejo y soporte multilingüe, funciona perfectamente en Windows, Linux y Mac. Libre de amenazas en línea, disfrute de soporte 24 horas al día, 7 días a la semana. Este bot versátil ofrece actualizaciones constantes y te ayuda a ganar seguidores en tu nicho. Descubra la diferencia ahora.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Contenerdor footer - Uso universal-->
+        <div id="container_footer">
+
+            <!--Primera linea decorativa - footer-->
+            <div id="line_footer"></div>
+
+            <!--subcontenedor uno - cabezera de footer - Logo y Menu de navegacion-->
+            <div id="subcontainer_footer_one">
+
+                <!--Logo FollowGram - footer-->
+                <div id="logo_footer_container">
+                    <a href="/index.html"<h1>FollowGram</h1></a>
+                </div>
+
+                <!-- Contenedor del menu de navegacion - footer-->
+                <div id="nav_menu_footer_container">
+
+                    <!--Menu de navegacion - footer-->
+                    <nav>
+                        <ol>
+                            <li><a href="/index.html">inicio</a></li>
+                            <li><a href="#">informacion</a></li>
+                            <li><a href="#">galeria</a></li>
+                            <li><a href="#">Descargar</a></li>
+                        </ol>
+                    </nav>
+
+                </div>
+
+            </div>
+
+            <!--Subcontenedor dos - cuerpo del footer - Botones de Social media-->
+            <div id="subcontainer_footer_two">
+
+                <!--Boton Youtube-->
+                <div class="cubo_button" onclick="redireccionar_youtube()">
+                    <img src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/youtube-play.png" alt="Ir al canal de YouTube"/>
+                </div>
+                
+                <!--Boton Tiktok-->
+                <div class="cubo_button" onclick="redireccionar_tiktok()">
+                    <img src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/tiktok.png" alt="Ir a la cuenta de Tiktok"/>
+                </div>
+
+                <!--Boton Github-->
+                <div class="cubo_button" onclick="redireccionar_github()">
+                    <img src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/github.png" alt="Ir al repositorio de GitHub"/>
+                </div>
+
+            </div>
+
+            <!--Segunda linea decorativa - footer-->
+            <div id="line_footer"></div>
+
+            <!--Subcontenedor tres - footer - coping - politicas y servicios -->
+            <div id="subcontainer_footer_three">
+
+                <!--Texto de coping - footer-->
+                <div id="coping">
+                    <span>©2024 FOLLOWGRAM, TODOS LOS DERECHOS RESERVADOS</span>
+                </div>
+
+                <!--Contenedor del menu de politicas y servicios - footer-->
+                <div id="container_info">
+
+                    <!--Items de politicas y servicios - footer-->
+                    <nav>
+                        <ol>
+                            <li><a href="#">Terminos de servicio</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Politica de cookies</a></li>
+                        </ol>
+                    </nav>
+                     
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Bonto flotante de whatsapp - redirecion a chat de whatsapp-->
+        <!--
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        -->
+
+    </body>
+</html>
